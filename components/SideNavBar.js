@@ -22,7 +22,7 @@ function SideNavBar() {
     p-5"
     >
       <div className="flex justify-center">
-        <Image src="/logo2.png" alt="logo" 
+        <Image src="/logo3.png" alt="logo" 
         className="cursor-pointer"
         width={150} height={60} 
         onClick={()=>router.push('/')}/>
