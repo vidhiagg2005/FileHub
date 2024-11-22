@@ -15,23 +15,31 @@ function Login() {
      
     },[session])
   return (
-    <div className='flex justify-center 
-    items-center mt-[25%] ml-[0%] md:ml-[50%] flex-col gap-6'>
-      <Image src='/logo.png'
-      alt='logo'
-      width={200}
-      height={100}
+    <div 
+      className="relative min-h-screen w-full bg-inherit flex justify-center items-center ">
+      {/* Logo in the Top Right */}
+      <Image 
+        className="absolute top-4 left-4"
+        src="/logo3.png"
+        alt="logo"
+        width={500} 
+        height={50} 
       />
-        <button 
-        className=' text-white'
-        onClick={()=>signIn()}>
-            <Image src='/google.png'
-            alt='google'
-            width={300}
-            height={300}
-            />
-            </button>
-    </div>
+
+      {/* Centered Sign-In Button */}
+      <button 
+        className="text-white flex flex-col items-center gap-2"
+        onClick={() => signIn()}>
+        <Image 
+          className="rounded-2xl"
+          src="/google2.png"
+          alt="google"
+          width={300}
+          height={200}
+        />
+      </button>
+</div>
+
   )
 }
 
